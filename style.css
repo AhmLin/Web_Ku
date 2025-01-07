@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+body {
+
+    background: linear-gradient(rgba(214, 214, 214, 0.5), rgba(236, 236, 236, 0.5)), url(bck.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    background-size: cover;
+}
+
+.image {
+    position: relative;
+    width:50%;
+    margin-left: 100px;
+    margin-top: 140px;
+    
+}
+
+.image img {
+    border-radius: 30px 0 0 0;
+    
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+.img img {
+    width: 320px;
+    height: 390px;
+    object-fit: cover;
+  }
+
+.horizontal {
+    width: 400px;
+    position: relative;
+    height: 1.5px;
+    margin-left: -49px;
+    margin-top: -3px;
+    background-color: black;
+}
+
+.vertikal {
+    width: 1.5px;
+    position: relative;
+    height: 430px;
+    margin-left: 318px;
+    margin-top: -411px;
+    background-color: black;
+}
+
+.image h3 {
+    font-size: 38px;
+    font-family: "Aleo", serif;
+    margin-top: 15px;
+}
+
+.image h5 {
+    font-family: "lexend deca", serif;
+    font-weight: 300;
+    font-size: 23px;
+}
+
+.box {
+    background-color: white;
+    margin: 40px;
+    height: 570px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.box h4 {
+    font-family: "lexend deca", serif;
+    font-size: 30px;
+}
+
+.box p {
+    text-align: justify;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    margin-top: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.85px;
+    word-spacing: 1.5px;
+}
+
+.experience {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.edukasi {
+    width: 350px;
+}
+
+.experience p {
+    font-size: 12px;
+    font-family: "aleo", serif;
+}
+
+.pengalaman {
+    width: 350px;
+}
+
+.experience hr {
+    width: 1.5px;
+    background-color: black;
+    height: 230px;
+
+}
+
+.more {
+    margin-top: 20px;
+    padding: 8px;
+    font-family: "Lexend Deca", serif;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.9s;
+}
+
+.more:hover {
+    transform: scale(0.9);
+    background-color: black;
+    color: white;
+}
+
+.call  {
+    display: flex;
+    margin-top: 30px;
+    font-size: 11px;
+    font-weight: 400;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "lexend deca", serif;
+}
+
+.call img {
+    margin-right: 10px;
+    transform: translate(0px,7px);
+}
+
+@media screen and (max-width: 800px){
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .image {
+        transform: scale(0.7);
+        margin-top: 20px;
+        text-align: center;
+        width: auto;
+        margin-right: 40px;
+    }
+
+    .image h3 {
+        font-size: 28px;
+        
+    }
+
+    .box {
+        transform: scale(0.8);
+        text-align: center;
+        margin-top: -69px;
+        height: auto;
+        padding-bottom: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .other {
+        margin-right: 80px;
+    }
+
+    .experience {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .experience h4 {
+        text-align: center;
+        margin-left: 90px;
+    }
+
+    .experience hr {
+        display: none;
+    }
+
+    .more {
+        margin-left: 90px;
+        margin-bottom: 50px;
+    }
+
+    .call {
+        font-size: 14px;
+        margin-top: 70px;
+    }
+
+    .call img {
+        
+        transform: translate(0px, 2px);
+    }
+}
